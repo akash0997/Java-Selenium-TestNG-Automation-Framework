@@ -6,7 +6,7 @@ agent any
     stages {
        stage ('Test') {
           steps {
-               bat 'mvn clean test -Pdev'
+               sh 'PORT=9515 mvn clean test'
                }
            }
        }
